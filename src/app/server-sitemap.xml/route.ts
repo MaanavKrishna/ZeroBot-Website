@@ -1,5 +1,3 @@
-import type { MetadataRoute } from 'next';
-
 export async function GET(): Promise<Response> {
   // Define the URLs that should be included in the sitemap
   const sitemap = [
