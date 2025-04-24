@@ -10,7 +10,13 @@ const nextConfig = {
     remotePatterns: [],
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: {
+      inlineCriticalCss: true,
+      minifier: 'beasties',
+      cssModules: true,
+      fontFace: true,
+      variables: true,
+    },
   },
   async headers() {
     return [
