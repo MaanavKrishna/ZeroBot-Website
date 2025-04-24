@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  colorScheme: "dark",
+};
 
 export const metadata: Metadata = {
   title: "ZeroBot | Automated Trading Bot for Zerodha",
@@ -67,11 +74,6 @@ export const metadata: Metadata = {
     creator: "@zerobot",
     site: "@zerobot",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   verification: {
     google: "google-site-verification-code",
     yandex: "yandex-verification-code",
@@ -90,7 +92,6 @@ export const metadata: Metadata = {
     email: false,
     url: false,
   },
-  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -100,42 +101,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0070f3" />
-        
-        {/* DNS prefetching */}
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://zerodha.com" />
-        
-        {/* Preconnect to important domains */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* Humans.txt */}
-        <link rel="author" href="/humans.txt" />
-        
-        {/* Alternate pages */}
-        <link rel="alternate" href="https://zerobot-trading.vercel.app" hrefLang="x-default" />
-        <link rel="alternate" href="https://zerobot-trading.vercel.app" hrefLang="en" />
-
-        {/* Browser config */}
-        <meta name="msapplication-config" content="/browserconfig.xml" />
-        
-        {/* Preload critical assets */}
-        <link rel="preload" href="/fonts/geist-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-
-        {/* Mobile specific meta */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="ZeroBot" />
-        <meta name="application-name" content="ZeroBot" />
-        
-        {/* Search engines */}
-        <meta name="google" content="notranslate" />
-        
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+      >
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -149,10 +117,6 @@ export default function RootLayout({
             gtag('config', 'G-XXXXXXXXXX');
           `}
         </Script>
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
-      >
         {children}
       </body>
     </html>
