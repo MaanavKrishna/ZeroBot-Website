@@ -5,7 +5,6 @@ import HowItWorks from "@/components/HowItWorks";
 import Statistics from "@/components/Statistics";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import { NextSeo } from "next-seo";
 import { jsonLdScriptProps } from "react-schemaorg";
 import { WebSite, Organization, SoftwareApplication, Article } from "schema-dts";
 
@@ -43,47 +42,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <NextSeo
-        title="ZeroBot | Automated Trading Bot for Zerodha"
-        description="ZeroBot is an intelligent intraday trading bot for Zerodha, powered by the KiteConnect API with smart capital allocation, real-time analytics, and risk management."
-        canonical="https://zerobot-trading.vercel.app/"
-        openGraph={{
-          url: 'https://zerobot-trading.vercel.app/',
-          title: 'ZeroBot | Automated Trading Bot for Zerodha',
-          description: 'Automate your intraday trading with ZeroBot - intelligent trading bot for Zerodha with smart capital allocation and risk management.',
-          images: [
-            {
-              url: 'https://zerobot-trading.vercel.app/og-image.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'ZeroBot - Automated Trading Bot',
-              type: 'image/jpeg',
-            },
-          ],
-          siteName: 'ZeroBot',
-        }}
-        twitter={{
-          handle: '@zerobot',
-          site: '@zerobot',
-          cardType: 'summary_large_image',
-        }}
-        additionalLinkTags={[
-          {
-            rel: 'icon',
-            href: '/favicon.ico',
-          },
-          {
-            rel: 'apple-touch-icon',
-            href: '/apple-icon.png',
-            sizes: '180x180'
-          },
-          {
-            rel: 'manifest',
-            href: '/manifest.json'
-          }
-        ]}
-      />
-
       {/* Software Application schema */}
       <script
         {...jsonLdScriptProps<SoftwareApplication>({
