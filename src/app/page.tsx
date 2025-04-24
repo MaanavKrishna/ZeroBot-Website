@@ -135,8 +135,7 @@ export default function Home() {
           "description": "ZeroBot is an intelligent intraday trading bot for Zerodha with smart capital allocation and risk management.",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://zerobot-trading.vercel.app/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+            "target": "https://zerobot-trading.vercel.app/search?q={search_term_string}"
           }
         })}
       />
