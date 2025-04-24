@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: ZeroBot Team
+Contact: hello@zerobot-trading.vercel.app
+Twitter: @zerobot
+GitHub: https://github.com/MaanavKrishna/ZeroBot
+Location: India
+
+/* SITE */
+Last update: 2023/07/16
+Standards: HTML5, CSS3, JavaScript, TypeScript
+Components: Next.js, React, Framer Motion, Tailwind CSS
+Software: VS Code, Git, Figma 

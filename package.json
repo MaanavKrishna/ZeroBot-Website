@@ -1,0 +1,60 @@
+{
+  "name": "zerobot-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for ZeroBot - Automated Trading Bot for Zerodha",
+  "author": "ZeroBot Team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.2",
+    "framer-motion": "^12.9.1",
+    "next": "15.3.1",
+    "next-seo": "^6.6.0",
+    "next-sitemap": "^4.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-schemaorg": "^2.0.0",
+    "recharts": "^2.15.3",
+    "schema-dts": "^1.1.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaanavKrishna/ZeroBot"
+  },
+  "keywords": [
+    "zerobot",
+    "zerodha",
+    "trading",
+    "bot",
+    "automated",
+    "kiteconnect",
+    "nextjs",
+    "react"
+  ]
+}

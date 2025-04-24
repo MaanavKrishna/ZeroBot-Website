@@ -1,0 +1,33 @@
+{
+  "navigation": {
+    "main": "Main Navigation",
+    "footer": "Footer Navigation",
+    "skip": "Skip to main content"
+  },
+  "buttons": {
+    "menu": "Toggle Menu",
+    "close": "Close",
+    "getStarted": "Get Started with ZeroBot",
+    "download": "Download ZeroBot",
+    "learnMore": "Learn More about ZeroBot",
+    "viewGitHub": "View on GitHub"
+  },
+  "sections": {
+    "hero": "Hero Section",
+    "features": "Features Section",
+    "howItWorks": "How It Works Section",
+    "stats": "Statistics Section",
+    "faq": "Frequently Asked Questions"
+  },
+  "socialLinks": {
+    "github": "ZeroBot on GitHub",
+    "twitter": "ZeroBot on Twitter",
+    "linkedin": "ZeroBot on LinkedIn",
+    "email": "Email ZeroBot Support"
+  },
+  "charts": {
+    "performance": "Trading Performance Chart",
+    "winLoss": "Win-Loss Ratio Chart",
+    "strategyDistribution": "Strategy Distribution Chart"
+  }
+} 
