@@ -10,13 +10,7 @@ const nextConfig = {
     remotePatterns: [],
   },
   experimental: {
-    optimizeCss: {
-      inlineCriticalCss: true,
-      minifier: 'beasties',
-      cssModules: true,
-      fontFace: true,
-      variables: true,
-    },
+    // Removing optimizeCss as it's causing build issues
   },
   async headers() {
     return [
@@ -45,4 +39,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;
