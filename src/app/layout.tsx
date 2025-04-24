@@ -75,9 +75,9 @@ export const metadata: Metadata = {
   verification: {
     google: "google-site-verification-code",
     yandex: "yandex-verification-code",
-    yahoo: "yahoo-verification-code",
     other: {
       "facebook-domain-verification": "facebook-verification-code",
+      "msvalidate.01": "bing-verification-code"
     },
   },
   category: "Technology",
