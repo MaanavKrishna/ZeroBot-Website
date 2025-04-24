@@ -76,7 +76,6 @@ export const metadata: Metadata = {
     google: "google-site-verification-code",
     yandex: "yandex-verification-code",
     yahoo: "yahoo-verification-code",
-    msValidate: "msvalidate.01=bing-verification-code",
     other: {
       "facebook-domain-verification": "facebook-verification-code",
     },
